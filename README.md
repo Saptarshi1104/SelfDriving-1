@@ -35,3 +35,18 @@ Project on 25th October, 2022
 * **Safe Cleanup:** Used a `try...finally` block so actors and sensors get cleared when stopping the script (`Ctrl + C`).
 
 ---
+
+# Details of C-205-Project.py
+
+Project on 25th October, 2022
+
+---
+
+## 🧠 Brief Points
+
+* **Mounted Depth Sensor:** Attached a `sensor.camera.depth` to the front hood (`1366x768` at `110° FOV`).
+* **Raw Array Conversion:** Took CARLA's raw pixel byte array, converted it to a 4-channel NumPy array, and sliced it to 3 channels for OpenCV.
+* **Live Display Window:** Rendered a real-time depth feed on screen using `cv2.imshow()` instead of saving files to disk.
+* **Spectator Tracking & Autopilot:** Placed the spectator camera ahead of the vehicle and handed control over to CARLA's AI.
+
+---
