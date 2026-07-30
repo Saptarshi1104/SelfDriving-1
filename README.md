@@ -4,7 +4,7 @@ Project on 25th October, 2022
 
 ---
 
-## 🧠 Brief Points
+##  Brief Points
 
 * **Spawned a Tesla Model 3:** Picked a random spawn point on the map.
 * **Enabled Autopilot:** Let CARLA's built-in AI handle steering and driving.
@@ -15,7 +15,7 @@ Project on 25th October, 2022
 
 ---
 
-## 🚀 Quick Run
+##  Quick Run
 
 1. **Launch CARLA Simulator** (`CarlaUE4.exe` or `./CarlaUE4.sh`)
 2. **Run the script:**
@@ -26,7 +26,7 @@ Project on 25th October, 2022
 
 Project on 25th October, 2022
 
-## 🧠 Brief Points
+##  Brief Points
 
 * **Spawned Tesla Model 3:** Placed at a random spawn point with CARLA's built-in autopilot driving it.
 * **Dashcam Setup:** Configured a **640x480** RGB camera with a standard **110° FOV**.
@@ -42,7 +42,7 @@ Project on 25th October, 2022
 
 ---
 
-## 🧠 Brief Points
+##  Brief Points
 
 * **Mounted Depth Sensor:** Attached a `sensor.camera.depth` to the front hood (`1366x768` at `110° FOV`).
 * **Raw Array Conversion:** Took CARLA's raw pixel byte array, converted it to a 4-channel NumPy array, and sliced it to 3 channels for OpenCV.
@@ -50,3 +50,18 @@ Project on 25th October, 2022
 * **Spectator Tracking & Autopilot:** Placed the spectator camera ahead of the vehicle and handed control over to CARLA's AI.
 
 ---
+
+# Details of C-205-Project-T4.py
+
+Project on 3rd November, 2022
+
+--
+
+## Brief Points
+
+* **Modular Structure:** Refactored the simulation logic into a reusable `main(arg)` function with argument parsing support.
+* **Documented Core API:** Annotated essential CARLA client connections, world initialization, and spectator camera positioning.
+* **Deterministic Spawning:** Set up vehicle placement using fixed map spawn points (`spawn_points[0]`) rather than random selection.
+* **Base Template:** Created a clean base script without sensor attachments for quick vehicle testing.
+
+--
