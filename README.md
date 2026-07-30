@@ -1,4 +1,4 @@
-# CARLA Autonomous Car & Data Logger
+# Details of C-204-Project.py
 
 Project on 25th October, 2022
 
@@ -21,3 +21,17 @@ Project on 25th October, 2022
 2. **Run the script:**
    ```bash
    python main.py
+
+# Details of C-204-Project-T4.py
+
+Project on 25th October, 2022
+
+## 🧠 Brief Points
+
+* **Spawned Tesla Model 3:** Placed at a random spawn point with CARLA's built-in autopilot driving it.
+* **Dashcam Setup:** Configured a **640x480** RGB camera with a standard **110° FOV**.
+* **Frame Recording:** Captured real-time images and saved them directly to `output/frame_<number>.jpg`.
+* **Spectator Camera:** Placed the simulator spectator view 30m ahead facing backward to watch the car approach.
+* **Safe Cleanup:** Used a `try...finally` block so actors and sensors get cleared when stopping the script (`Ctrl + C`).
+
+---
